@@ -1,0 +1,36 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+
+// which themes you what to enable (empty to enable all)
+$nb-enabled-themes: (material);
+
+$nb-themes: nb-register-theme((
+ // app wise variables for each theme
+  sidebar-header-gap: 2rem,
+  sidebar-header-height: initial,
+  layout-content-width: 1400px,
+
+  font-main: Roboto,
+  font-secondary: font-main,
+
+  color-primary: #03a9f4,
+  color-info: #03a9f4,
+  color-success: #8bc34a,
+  color-warning: #ffc107,
+  color-danger: #f44336,
+
+  link-color: color-primary,
+  link-color-hover: #0081ce,
+  link-color-visited: link-color-hover,
+
+  form-control-selected-border-color: color-info,
+
+  menu-submenu-active-border-color: color-info,
+
+  color-fg-highlight: color-info,
+
+  user-menu-border: color-info,
+  user-menu-active-bg: color-info,
+), material, default);

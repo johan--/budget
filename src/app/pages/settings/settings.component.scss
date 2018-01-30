@@ -1,0 +1,43 @@
+@import '../../@theme/styles/themes';
+
+:host {
+  display: block;
+}
+
+mat-radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-radio-group {
+  padding: 0.25rem;
+}
+
+mat-table {
+  mat-header-row mat-header-cell:last-child {
+    text-align: center;
+  }
+
+  mat-row mat-cell:last-child {
+    text-align: center;
+  }
+}
+
+.highlight {
+  background: nb-theme(color-fg-highlight);
+}
+
+@include nb-install-component() {
+  .empty-table-message {
+    font-weight: nb-theme(font-weight-bolder);
+  }
+}
+
+@include nb-install-component() {
+  .notification {
+    color: nb-theme(color-info);
+    padding: 0.5rem;
+  }
+}
+
+

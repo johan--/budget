@@ -1,0 +1,43 @@
+@mixin ngx-material-theme() {
+  //$primary: mat-palette($mat-blue);
+  $primary: mat-palette($mat-light-blue);
+
+  $theme: mat-light-theme($primary, $primary);
+
+  @include angular-material-theme($theme);
+
+  nb-sidebar .main-container {
+    border-top-right-radius: 6px !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  nb-layout-header nav,
+  nb-layout-footer nav {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14) !important;
+  }
+
+  .mat-dialog-content,
+  .mat-dialog-actions {
+    font-family: nb-theme(font-main);
+  }
+
+  mat-card {
+    border-radius: 6px;
+  }
+
+  .mat-raised-button {
+    display: flex;
+    font-weight: 350;
+    font-size: 1rem;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 3px;
+    height: 100%;
+    padding: 0 1rem;
+
+    background-color: #03a9f4;
+    color: #ffffff;
+    box-shadow: 0 12px 20px -10px rgba(3, 169, 244, 0.28), 0 4px 20px 0 rgba(0, 0, 0, 0.12),
+    0 7px 8px -5px rgba(3, 169, 244, 0.2);
+  }
+}
