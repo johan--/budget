@@ -1,6 +1,6 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
 import { DashboardStore } from './dashboard.store';
-import { ConfirmationBarService } from '../../@theme/services';
+// import { ConfirmationBarService } from '../../@theme/services';
 import { AuthStore } from '../../auth/auth.store';
 
 @Component({
@@ -11,8 +11,8 @@ import { AuthStore } from '../../auth/auth.store';
 })
 export class DashboardComponent implements OnInit, OnDestroy  {
   constructor(public store: DashboardStore,
-              private cd: ChangeDetectorRef, public authStore: AuthStore,
-              private confirmationBar: ConfirmationBarService) {}
+              public authStore: AuthStore,
+              /*private confirmationBar: ConfirmationBarService*/) {}
 
   private alive: boolean = true;
 

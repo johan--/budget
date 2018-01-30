@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { SettingsStore } from './settings.store';
-import { ConfirmationBarService } from '../../@theme/services';
+// import { ConfirmationBarService } from '../../@theme/services';
 import { AuthStore } from '../../auth/auth.store';
 
 @Component({
@@ -11,8 +11,8 @@ import { AuthStore } from '../../auth/auth.store';
 })
 export class SettingsComponent implements OnInit, OnDestroy  {
   constructor(public store: SettingsStore,
-              private cd: ChangeDetectorRef, public authStore: AuthStore,
-              private confirmationBar: ConfirmationBarService) {}
+              public authStore: AuthStore,
+              /*private confirmationBar: ConfirmationBarService*/) {}
 
   private alive: boolean = true;
 

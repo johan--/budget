@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import * as Utils from './utils';
-import * as Http from './http';
+// import * as Http from './http';
 
 const CORE_PROVIDERS = [
   Utils.AnalyticsService,
