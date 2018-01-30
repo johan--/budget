@@ -1,7 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { CountryGuard } from '../@acl/guards';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent, DashboardResolve } from './dashboard';
 import { IncomeComponent, IncomeResolve } from './income';

@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit, OnDestroy } from '@angular/core';
 import { SpendStore } from './spend.store';
 // import { ConfirmationBarService } from '../../@theme/services';
 import { AuthStore } from '../../auth/auth.store';
